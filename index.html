@@ -7,8 +7,9 @@
     <body ng-app="demo">
         <div class="container" ng-controller="DemoController">
             <h1>Bulgarska loterija</h1>
-
-
+            <p>Izžrebane številke: {{ number }}</p>
+            <p>Čas žrebanja (ms): {{ time }}</p>
+            <button class="btn btn-primary" ng-click="firePromise()">Začni z loterijo</button>
         </div>
         <script src="js/main.js"></script>
     </body>
